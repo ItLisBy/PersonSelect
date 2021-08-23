@@ -15,7 +15,7 @@
         <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.3" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="..\.gitignore">
+      <Content Include="..\..\.gitignore">
         <Link>.gitignore</Link>
       </Content>
     </ItemGroup>

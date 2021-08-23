@@ -1,4 +1,4 @@
-bin/
+sgit bin/
 obj/
 /packages/
 riderModule.iml
