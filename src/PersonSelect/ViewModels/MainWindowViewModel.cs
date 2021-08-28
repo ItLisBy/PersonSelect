@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using PersonSelect.Services;
 
 namespace PersonSelect.ViewModels
 {
-    public class MainWindowViewModel : ViewModelBase
+    class MainWindowViewModel : ViewModelBase
     {
-        public string Greeting => "Welcome to Avalonia!";
+        public MainWindowViewModel(Database db) {
+            List = new TodoListViewModel(db.GetItems());
+        }
+
+        public TodoListViewModel List { get; }
     }
 }
